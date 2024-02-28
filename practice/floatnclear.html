@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+         /*   clear: right;*/
+         clear: both;
+         background-color: aquamarine;
+        }
+
+        .image {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img class="image" src="b1.jpg" alt="error" width="233px">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eaque at esse eveniet cumque consectetur
+                neque natus. Inventore asperiores iure blanditiis provident officiis architecto debitis ratione
+                doloremque, maxime quaerat magni aliquid temporibus deserunt!</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum magnam
+            praesentium optio nihil vitae est, quisquam, eum obcaecati tempora impedit velit error. Omnis architecto
+            veniam libero, ex eligendi tempore placeat quisquam repudiandae harum consequatur delectus corrupti. Est
+            quia recusandae vero voluptatum, aspernatur labore eveniet explicabo maiores. Quisquam, autem? Sit ullam
+            suscipit veritatis nisi quisquam, doloremque labore earum dicta ipsam at pariatur nihil ut velit ratione
+            quod! Ea velit quidem corrupti sunt nisi. Nihil, animi placeat? Atque aliquam nam deleniti blanditiis,
+            perspiciatis ad, repudiandae, alias esse nostrum doloribus in. Maxime quasi, corporis adipisci dolorem
+            minima voluptatum natus nemo est, commodi, itaque et fugit. Aspernatur reprehenderit tempore inventore sed,
+            libero fugit repudiandae, eligendi eum iusto molestiae unde numquam! Iure natus tempore nisi dolorum fuga
+            nesciunt? Ullam, debitis sunt rerum exercitationem, aspernatur necessitatibus voluptatem quos tenetur
+            laborum qui nulla dolores fugit, provident esse consectetur odio modi tempore quidem accusamus nemo illo.
+            Aut quidem, perspiciatis, natus molestiae asperiores quisquam voluptatum ex omnis dolorum quis similique
+            distinctio, minima nesciunt magni eaque aliquam maiores autem. Similique sapiente quos voluptatem laborum,
+            dolor aperiam labore voluptate? Perferendis distinctio rem laborum totam iste reiciendis molestias nisi
+            nostrum recusandae? Consequuntur atque exercitationem temporibus quos explicabo omnis ab dolores velit!
+        </div>
+        <div class="card">Card3</div>
+    </div>
+</body>
+
+</html>

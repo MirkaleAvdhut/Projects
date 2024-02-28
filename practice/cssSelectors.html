@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selectors</title>
+
+    <style>
+        .box{
+            border: 2px solid black;
+            margin: 2px;
+        }
+        .boxes::before{
+            content:"Avdhut Sanjay Mirkale";
+        }
+        .boxes::after{
+            content:"Thank You";
+            color: red;
+        }
+
+        ::selection{
+            color: rgb(187, 143, 228);
+            background-color: black;
+
+        }
+        .box::first-letter{
+            color: chocolate;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey i am a first box</div>
+        <div class="box">Hey i am a second box</div>
+        <div class="box">Hey i am a third box</div>
+        <input type="text" placeholder="Type Your Text Here">
+    </div>
+    
+</body>
+</html>
